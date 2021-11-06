@@ -38,7 +38,7 @@ private static final long serialVersionUID = 1L;
 	private User client;
 	
 	@OneToMany(mappedBy = "id.order")
-	private Set<OrderItem> order = new HashSet<>();
+	private Set<OrderItem> items = new HashSet<>();
 
 	public Order() {
 		
@@ -84,8 +84,8 @@ private static final long serialVersionUID = 1L;
 	public void setClient(User client) {
 		this.client = client;
 	}
-	public Set<OrderItem> getOrder() {
-		return order;
+	public Set<OrderItem> getItems() {
+		return items;
 	}
 
 	@Override
