@@ -105,7 +105,4 @@ private static final long serialVersionUID = 1L;
 		return id == other.id;
 	}
 
-	
-	
-	
 }
